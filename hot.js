@@ -24,20 +24,20 @@ var characters = [
     uniqueID: 1984
   },
   {
-    routeName: "user1",
+    routeName: "user2",
     name: "Moira",
     phone: "6081230000",
-    email: "me@me.com"  ,
+    email: "her@her.com"  ,
     guests: 2,
-    uniqueID: 1984
+    uniqueID: 1989
   },
   {
-    routeName: "user1",
-    name: "Brian",
+    routeName: "user3",
+    name: "Andrew",
     phone: "3135550000",
-    email: "me@me.com"    ,
+    email: "him@him.com"    ,
     guests: 2,
-    uniqueID: 1984
+    uniqueID: 1987
   }
 ];
 
@@ -49,19 +49,25 @@ app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "home.html"));
 });
 
+app.get("/reserve", function(req, res) {
+    res.sendFile(path.join(__dirname, "reserve.html"));
+  });
+
 app.get("/view", function(req, res) {
   res.sendFile(path.join(__dirname, "view.html"));
 });
 
+//temp callback update to use reserve above
 app.get("/make", function(req, res) {
-    res.sendFile(path.join(__dirname, "make.html"));
+    res.sendFile(path.join(__dirname, "reserve.html"));
   });
 
 // Displays all characters
-/*app.get("/api/characters", function(req, res) {
+app.get("/api/characters", function(req, res) {
   return res.json(characters);
-}); */
-/*
+}); 
+
+
 // Displays a single character, or returns false
 app.get("/api/characters/:character", function(req, res) {
   var chosen = req.params.character;
@@ -76,14 +82,14 @@ app.get("/api/characters/:character", function(req, res) {
 
   return res.json(false);
 });
-*/
+
 
 // Create New Characters - takes in JSON input
 app.post("/api/characters", function(req, res) {
   // req.body hosts is equal to the JSON post sent from the user
   // This works because of our body parsing middleware
   var newCharacter = req.body;
-  console.log("newCharacter", newCharacter)
+  console.log("newPatron", newCharacter)
 
   // Using a RegEx Pattern to remove spaces from newCharacter
   // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html

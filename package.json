@@ -1,0 +1,25 @@
+{
+  "name": "hotrestaurant",
+  "version": "1.0.0",
+  "description": "tables and reservations",
+  "main": "hot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpeedHunterSam/HotRestaurant.git"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SpeedHunterSam/HotRestaurant/issues"
+  },
+  "homepage": "https://github.com/SpeedHunterSam/HotRestaurant#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
