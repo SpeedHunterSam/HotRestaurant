@@ -1,7 +1,7 @@
 {
   "name": "hotrestaurant",
   "version": "1.0.0",
-  "description": "tables and reservations",
+  "description": "hot restaurant app",
   "main": "hot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,10 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/SpeedHunterSam/HotRestaurant.git"
   },
-  "keywords": [
-    "express"
-  ],
-  "author": "",
+  "author": "brian",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/SpeedHunterSam/HotRestaurant/issues"
